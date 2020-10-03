@@ -1,0 +1,23 @@
+{
+  "name": "ci-cd-mobile-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "ci-cd"
+  ],
+  "author": "Arnur Nogaibekov",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}
