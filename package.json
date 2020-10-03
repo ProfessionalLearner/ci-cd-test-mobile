@@ -2,7 +2,7 @@
   "name": "ci-cd-mobile-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "server/index.js",
+  "main": "backend/index.js",
   "scripts": {
     "test": "jest"
   },
