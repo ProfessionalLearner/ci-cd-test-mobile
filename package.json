@@ -4,8 +4,9 @@
   "description": "",
   "main": "backend/index.js",
   "scripts": {
-    "client": "npm frontend",
-    "server": "n",
+    "client": "cd frontend && npm start",
+    "server": "nodemon backend/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "test": "jest"
   },
   "keywords": [
@@ -22,6 +23,7 @@
   "dependencies": {
     "config": "^3.3.2",
     "express": "^4.17.1",
+    "express-validator": "^6.6.1",
     "mongoose": "^5.10.7"
   }
 }

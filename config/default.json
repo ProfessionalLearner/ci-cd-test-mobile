@@ -1,4 +1,4 @@
 {
     "port": 5000,
-    "databaseURI": "mongodb://localhost:27017/blogpostapp"
+    "databaseURI": "mongodb+srv://Arnur:@cluster0.cqtt9.mongodb.net/sampleApp?retryWrites=true&w=majority"
 }
