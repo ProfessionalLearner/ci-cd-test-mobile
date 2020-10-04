@@ -4,6 +4,8 @@
   "description": "",
   "main": "backend/index.js",
   "scripts": {
+    "client": "npm frontend",
+    "server": "n",
     "test": "jest"
   },
   "keywords": [
@@ -12,11 +14,13 @@
   "author": "Arnur Nogaibekov",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "cross-env": "^7.0.2",
     "jest": "^26.4.2",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "config": "^3.3.2",
     "express": "^4.17.1",
     "mongoose": "^5.10.7"
   }
