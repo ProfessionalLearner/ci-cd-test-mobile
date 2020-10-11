@@ -1,9 +1,20 @@
-const app = require('./app');
+const express = require('express')
+
+const app = express();
+
 const config = require('config')
 const connectDB = require('./database');
 
 const PORT = config.get('port') || 5000;
 
+
+app.use(express.json({extended: true}));
+
+//app.use('/api/words', require('./routes/words'));
+
+app.get('/', (req, res) => {
+    res.end('<h1>Server is running</h1>')
+});
 
 async function startServer() {
     try {
