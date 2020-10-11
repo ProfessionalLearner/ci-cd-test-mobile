@@ -2,7 +2,7 @@ const express = require('express')
 
 const app = express();
 
-const config = require('config')
+const config = require('config');
 const connectDB = require('./database');
 
 const PORT = process.env.PORT || 5000;
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json({extended: true}));
 
-//app.use('/api/words', require('./routes/words'));
+app.use('/api/words', require('./routes/words'));
 
 app.get('/', (req, res) => {
     res.end('<h1>Server is running</h1>')
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 async function startServer() {
     try {
-        //await connectDB();
+        await connectDB();
         app.listen(PORT, "0.0.0.0", () => {
             console.log(`Server started on ${PORT}`)
         })
