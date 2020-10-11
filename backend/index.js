@@ -7,7 +7,7 @@ const PORT = config.get('port') || 5000;
 
 async function startServer() {
     try {
-        await connectDB();
+        //await connectDB();
         app.listen(PORT, "0.0.0.0", () => {
             console.log(`Server started on ${PORT}`)
         })
