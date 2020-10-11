@@ -1,22 +1,13 @@
-const express = require('express')
+const app = require('./app');
 const config = require('config')
-const path = require('path')
-const mongoose = require('mongoose');
-const { start } = require('repl');
-
-const app = express();
-
-app.use(express.json({extended: true}));
+const connectDB = require('./database');
 
 const PORT = config.get('port') || 5000;
 
+
 async function startServer() {
     try {
-        await mongoose.connect(config.get('databaseURI'), {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-        });
+        await connectDB();
         app.listen(PORT, () => {
             console.log(`Server started on ${PORT}`)
         })

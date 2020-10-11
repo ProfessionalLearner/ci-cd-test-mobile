@@ -1,4 +1,5 @@
 {
     "port": 5000,
-    "databaseURI": "mongodb+srv://Arnur:@cluster0.cqtt9.mongodb.net/sampleApp?retryWrites=true&w=majority"
+    "databaseURI": "mongodb+srv://Arnur:thefuckingpasswordretard137@cluster0.cqtt9.mongodb.net/sampleApp?retryWrites=true&w=majority",
+    "testDB": "mongodb+srv://Arnur:thefuckingpasswordretard137@cluster0.cqtt9.mongodb.net/testSampleApp?retryWrites=true&w=majority" 
 }
