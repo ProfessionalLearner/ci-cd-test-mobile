@@ -5,7 +5,7 @@ const app = express();
 const config = require('config')
 const connectDB = require('./database');
 
-const PORT = config.get('port') || 5000;
+const PORT = process.env.PORT || 5000;
 
 
 app.use(express.json({extended: true}));
