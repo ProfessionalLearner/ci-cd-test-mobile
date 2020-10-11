@@ -45,15 +45,4 @@ describe("Test api/words/add route", () => {
 
     })
 
-    test("should get all words", async() => {
-        const res = await request(app)
-                    .get('/api/words');
-        const data = res.body;
-        expect(res.status).toBe(200);
-        data.forEach((word) => {
-            expect(word).toMatchSnapshot({
-                description: expect.any(String)
-            })
-        })
-    })
 })
