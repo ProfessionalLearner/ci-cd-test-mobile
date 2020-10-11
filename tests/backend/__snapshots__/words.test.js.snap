@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Test api/words/add route should get all words 1`] = `
-Object {
-  "__v": 0,
-  "_id": "5f83322025499046105c7fc2",
-  "description": Any<String>,
-}
-`;

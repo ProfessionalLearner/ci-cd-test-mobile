@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: npm test
+      - run: npm test -- -u
 workflows:
   build_test:
     jobs:
